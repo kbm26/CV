@@ -1,0 +1,40 @@
+section 
+{
+    display: none;
+}
+  
+section:target 
+{
+    transition:ease-in;
+    display: flex;
+    height:87vh;
+
+}
+
+#About
+{
+    background-color: rgb(8, 86, 86);
+}
+
+#Skills
+{
+    background-color: red;
+}
+
+#Contact
+{
+    background-color: purple;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+li
+{
+margin: 10px;
+}
