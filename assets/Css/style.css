@@ -1,0 +1,97 @@
+section 
+{
+    display: none;
+}
+body{
+    margin: 0%;
+}
+  
+section:target 
+{
+    transition:ease-in;
+    display: flex;
+    height:87vh;
+    flex-direction: column;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#About
+{
+    background-color: rgb(8, 86, 86);
+
+
+
+}
+
+#Skills
+{ width: 100vw;
+  
+    background-image: url('../images/bg-2.png');
+}
+
+#Contact
+{width: 100vw;
+  
+    background-image: url('../images/bg-3.png');
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    padding-inline-start: 40px;
+    margin-right: 50px;
+
+}
+
+li
+{
+margin: 20px;
+
+}
+#logo{
+    margin-left: 50px;
+
+    height:100px;
+}
+a{
+    font-size: 16px;
+    font-weight: 400;
+    color: aqua;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+p { 
+    font-size: 20px; 
+} 
+
+.container { 
+    background-color: rgb(192, 192, 192); 
+    width: 80%; 
+} 
+
+.skill { 
+    background-color: rgb(116, 194, 92); 
+    color: black; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+} 
+
+.html { 
+    width: 80%; 
+} 
+
+.php { 
+    width: 60%; 
+} 
