@@ -1,42 +1,57 @@
-section 
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transition: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+}
+ 
+ section 
 {
     display: none;
 }
-body{
-    margin: 0%;
-}
+
   
 section:target 
 {
-    transition:ease-in;
+    position: relative;
+    animation: transitionIn 0.75s;
     display: flex;
-    height:87vh;
     flex-direction: column;
 
+}
+body{
+    margin: 0%;
 }
 nav{
     display: flex;
     justify-content: space-between;
     background-color: black;
+    width: 100dvw;
+    
 }
 
 #About
 {
-    background-color: rgb(8, 86, 86);
-
-
-
+    width: 100vw;
+    background-image: url(../images/STEPS.svg);
+    
 }
 
-#Skills
-{ width: 100vw;
-  
+#resume
+{
     background-image: url('../images/bg-2.png');
+    background-size: cover;
+    height: 100vh;
 }
 
 #Contact
-{width: 100vw;
-  
+{   
     background-image: url('../images/bg-3.png');
 }
 
@@ -47,25 +62,28 @@ ul
     justify-content: flex-end;
     list-style-type: none;
     align-items: center;
-    padding-inline-start: 40px;
-    margin-right: 50px;
+    padding-inline-start: 40px; 
+    list-style-type: none;
+    padding: auto;
+    overflow: hidden;
+    margin-right: 5%;
+    
 
 }
 
 li
 {
 margin: 20px;
-
 }
 #logo{
-    margin-left: 50px;
-
+    margin-left: 5%;
     height:100px;
 }
+
 a{
-    font-size: 16px;
+    color: aliceblue;
+    font-size: 18px;
     font-weight: 400;
-    color: aqua;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
@@ -76,6 +94,7 @@ p {
 } 
 
 .container { 
+    height:10%;
     background-color: rgb(192, 192, 192); 
     width: 80%; 
 } 
@@ -94,4 +113,70 @@ p {
 
 .php { 
     width: 60%; 
-} 
+}  
+
+h1, h2{
+    color: rgb(0, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+#about-heading{
+    text-align: center;
+    font-size: 30px;
+}
+
+#about-text{
+    color:aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #24a7b5;
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+#me{
+    
+    width: 600px; 
+    height: 400px; 
+    
+}
+
+
+/* .curve{
+    position: absolute;
+    width: 100%;
+    height: 225px;
+    bottom: 0;
+
+}
+.curve::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    transform: translate(85%,60%);
+}
+.curve::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #232323;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+} */
+

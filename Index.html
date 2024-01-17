@@ -17,7 +17,7 @@
                     <a  href="#About">About</a>
                 </li>
                 <li>
-                    <a href="#Skills">Skills</a>
+                    <a href="#resume">Skills</a>
                 </li>
                 <li>
                     <a href="#Contact">Contact</a>
@@ -26,33 +26,138 @@
         </nav>
         <section id="About">
             <!-- about me section -->
-            <div>
-                <h1>About kyle</h1>
-                <p>
-                    I'm a passionate, ever-curious recent graduate on the brink of a life-changing internship.
-                    Fueled by a burning passion for the ever-changing and improving tech world, I bring a blend of enthusiasm and curiosity to the table.
-                    My journey in software development has equipped me with critical thinking, teamwork skills, and the ability to adapt to different environments.
-                    I'm all about turning challenges into opportunities and always ready for a challenge.
-                </p>
+            <div class="about-container">
+                <div>
+                    <h1 id="about-heading">About kyle</h1>
+                    <p id="about-text">
+                        I'm a passionate, ever-curious recent graduate on the brink of a life-changing internship.
+                        Fueled by a burning passion for the ever-changing and improving tech world, I bring a blend of enthusiasm and curiosity to the table.
+                        My journey in software development has equipped me with critical thinking, teamwork skills, and the ability to adapt to different environments.
+                        I'm all about turning challenges into opportunities and always ready for a challenge.
+                    </p>
+                </div>
+                <img id="me" src="assets/images/logo_RB.png">
+
             </div>
+            <div class="curve">
+                <h1>My hobbies</h1>
+                <div>Gaming</div>
+                <div>swimming</div>
+                <div>F1</div>
+                <div>gyming</div>
+                <div>comics</div>
+                <div>programming</div>
+                <div>table tennis</div>
+                <div>music</div>
+                <div>anime</div>
+            </div>
+
             <!-- skills -->
-            <div>
+            <!-- <div>
                 <h1>My Skills</h1> 
-                <p>HTML</p> 
+                <h2>HTML</h2> 
                 <div class="container"> 
                     <div class="skill html">80%</div> 
                 </div> 
-                <p>PHP</p> 
+                <h2>PHP</h2> 
                 <div class="container"> 
                     <div class="skill php">60%</div> 
                 </div> 
+            </div> -->
+
+        </section>
+        <section id="resume">
+            <div id="resume">
+                <h1>Resume</h1>
+                <br>
+                <h2>Work Exprience</h2>
+                <br>
+                <h4>Bootcamp Mentor/Reviewer</h4>
+                <ul>
+                    <li>Mentoring a team of potential WeThinkCode_ students, asseting them with techincal difficulties</li>
+                    <li>Providing advice to bootcampers on the fundamentals of coding</li>
+                    <li>Hosting a techincal and cultral evaluations of bootcampers to determine their suitablity for WeThinkCode_</li>
+                </ul>
+                <br>
+                <h4>techincal mentor</h4>
+                <ul>
+                    <li>Mentoring a team of WeThinkCode_ students, asseting them with techincal difficulties (similarly to the bootcamps)</li>
+                    <li>Hosting various workshops from helping with the fundamentals of coding to public speaking and the how to host presentations</li>
+                    <li>Teaching teams of students how to work within teams and how to be professional</li>
+                </ul>
+                <br>
+                <h2>Volunteer Work</h2>
+                <br>
+                <h4>Workshop Host</h4>
+                <ul>
+                    <li>Hosting workshops on new or complicated topics related to the WeThinkCode_ curriculum</li>
+                    <li>Working with other students to host more robust and interesting workshops</li>
+                </ul>
+                <br>
+                <h4>Bootcamp Volunteer</h4>
+                <ul>
+                    <li>Registering bootcampers on a daily basis and ensuring that the laptops they use do not get damaged or get stolen</li>
+                    <li>Making announcements regarding the plan for the day</li>
+                    <ul>formatting laptops after every bootcamp to ensure that future bootcamps would not be affected in terms of performance</ul>
+                </ul>
+                <br>
+                <h2>Education</h2>
+                <br>
+                <h4>National Senior Certificate (Bachelor's pass)</h4>
+                <ul>
+                    <li>2017 - 2021</li>
+                    <li>Arena Park Secondary</li>
+                    <li>Afrikaans</li>
+                    <li>English</li>
+                    <li>Mathematics (pure)</li>
+                    <li>Physical Sciences</li>
+                    <li>Life Sciences</li>
+                    <li>Bussiness Studies</li>
+                </ul>
+                <br>
+                <h4>NATIONAL CERTIFICATE INFORMATION TECHNOLOGY (SYSTEMS DEVELOPMENT)</h4>
+                <ul>
+                    <li>2022 - 2023</li>
+                    <li>Programming</li>
+                    <li>Object Orientated Programming (OOP)</li>
+                    <li>Brownfields Software Development</li>
+                    <li>Distributed Systems Architecture</li>
+                </ul>
+                <br>
+            </div>
+            <div id="skills">
+            <h1>Skills</h1>
+                <div>PYTHON</div>
+                <div>JAVA</div>
+                <div>JAVASCRIPT</div>
+                <div>C#</div>
+                <div>CSS</div>
+                <div>HTML</div>
+                <div>SQL</div>
+                <div>NOSQL</div>
+                <div>DOCKER</div>
+                <div>SPRINGBOOT</div>
+                <div>GIT</div>
+                <div>SVELTE</div>
+                <div>TEAMWORK</div>
+                <div>LEADERSHIP</div>
             </div>
 
         </section>
-        <section id="Skills">
-
-        </section>
         <section id="Contact">
+            <h1>Want me to get to know you?</h1>
+            <form action="#" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        
+                <button type="submit">Submit</button>
+            </form>
         </section>
 </body>
 </html>
