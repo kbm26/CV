@@ -212,6 +212,10 @@ h1, h2{
 
 }
 
+.menu{
+    display: none;
+}
+
 
 @media screen and  (max-width: 768px){
     .about-container{
@@ -228,9 +232,13 @@ h1, h2{
     }
     .toggle_btn{
         display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 5%;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+
+    .menu.open{
+        display: block;
     }
 
 }
