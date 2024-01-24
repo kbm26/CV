@@ -4,7 +4,6 @@ section{
 body {
     margin: 0%;
     background-image: url('../images/background.svg');
-    /* background-size: cover; */
     background-repeat: repeat;    
 }
 
@@ -13,51 +12,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    /* width: 100dvw; */
     
-}
-
-
-.top-wave {
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.top-wave svg {
-    /* position: relative; */
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 30px;
-}
-
-.top-wave .shape-fill-nav {
-    fill: #000000;
-}
-
-.toggle_btn{
-    display: none;
-}
-
-
-#About
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#resume
-{
-    background-color: #202731;
-    height: 100vh;
-}
-
-#Contact
-{   
-    background-color: #202731;
-    height: 100vh;
 }
 
 .navbar
@@ -92,14 +47,52 @@ a{
     font-family: "Poppins", sans-serif;
     transition: 0.3s;
 }
+
 a:hover{
     color: #00D8FF;
 }
 
-
-
 h1{
     font-size: 4rem;
+}
+
+.top-wave {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.top-wave svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.top-wave .shape-fill-nav {
+    fill: #000000;
+}
+
+.toggle_btn{
+    display: none;
+}
+
+#About
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#resume
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact
+{   display: flex;
+    flex-direction: column;
 }
 
 p{
@@ -154,7 +147,7 @@ h1, h2{
     border-color: #00D8FF;
     border-style: solid;
     background-color: #202731;
-    opacity: 0.97;
+    opacity: 0.8;
 }
 
 .hobbies-container{
@@ -165,12 +158,11 @@ h1, h2{
     margin-top: 2%;
     margin-left: 8%;
     margin-right: 8%;
+    
 
 }
 
-
-.hobbies{
-    background-color: #202731;
+.skills, .hobbies{
     padding: 20px;
     margin-top: 2%;
     margin-left: 8%;
@@ -179,15 +171,14 @@ h1, h2{
     border-color: #00D8FF;
     border-style: solid;
     background-color: #202731;
-    opacity: 0.97;
+    opacity: 0.8;
+
 }
 
 #me{
     width: 600px; 
     height: 400px; 
 }
-
-
 
 .hobby-icon{
     padding-right: 10px;
@@ -198,12 +189,13 @@ h1, h2{
     display: flex;
     align-items: center;
     padding: 20px;
-    background: #202731;
     height: 72px;
     width: 207px;
     border-style: solid;
     transition: 0.3s;
-    margin:2%
+    margin:2%;
+    background: #202731;
+
 }
 
 .hobbie-box:hover{
@@ -227,7 +219,8 @@ h1, h2{
 
 .hobby-title{
     font-family: "Poppins", sans-serif;
-    color: aliceblue;
+    color: #00D8FF;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 35px;
 
@@ -243,6 +236,34 @@ h1, h2{
     background-color: black;
 }
 
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-color: #00D8FF;
+    border-style: solid;
+    background-color: #202731;
+    opacity: 0.8;
+
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-color: #00D8FF;
+    border-style: solid;
+    background-color: #202731;
+    opacity: 0.8;
+}
 
 @media screen and  (max-width: 768px){
     .about-container{
