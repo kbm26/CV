@@ -1,9 +1,10 @@
-const togglebtn = document.querySelector('.toggle_btn')
-const togglebtnIcon = document.querySelector('.toggle_btn i')
-const menu = document.querySelector('.menu')
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the elements
+    const togglebtn = document.querySelector('.toggle_btn')
+    const menu = document.querySelector('.menu')
 
-togglebtn.onclick = function(){
-    menu.classList.toggle('open')
-    alert("i wokr")
-}
-//make menu drop down
+    // Add click event listener to the toggle button
+    togglebtn.addEventListener('click',function(){
+        menu.classList.toggle('open')
+    })
+});

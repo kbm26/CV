@@ -1,25 +1,49 @@
 section{
     position: relative;
 }
-body{
+body {
     margin: 0%;
+    background-image: url('../images/background.svg');
+    /* background-size: cover; */
+    background-repeat: repeat;    
 }
+
 
 nav{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    width: 100dvw;
+    /* width: 100dvw; */
     
+}
+
+
+.top-wave {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.top-wave svg {
+    /* position: relative; */
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.top-wave .shape-fill-nav {
+    fill: #000000;
 }
 
 .toggle_btn{
     display: none;
 }
 
+
 #About
 {
-    width: 100dvw;    
     display: flex;
     flex-direction: column;
 }
@@ -35,7 +59,8 @@ nav{
     background-color: #202731;
     height: 100vh;
 }
-ul
+
+.navbar
 {
     display: flex;
     flex-direction: row;
@@ -50,9 +75,8 @@ ul
 
 }
 
-li
-{
-margin: 20px;
+li{
+    margin: 20px;
 }
 
 #logo{
@@ -66,16 +90,22 @@ a{
     font-weight: 400;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    transition: 0.3s;
+}
+a:hover{
+    color: #00D8FF;
 }
 
 
 
-h1 {
+h1{
     font-size: 4rem;
-  }
-  p {
+}
+
+p{
     font-size: 1.5rem;
-  }
+}
+
 .container { 
     height:10%;
     background-color: rgb(192, 192, 192); 
@@ -104,13 +134,13 @@ h1, h2{
 }
 #about-heading{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #about-text{
     color:aliceblue;
     font-family: "Open Sans", sans-serif;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .about-container{
@@ -121,15 +151,16 @@ h1, h2{
     margin-top: 2%;
     margin-left: 8%;
     margin-right: 8%;
+    border-color: #00D8FF;
+    border-style: solid;
+    background-color: #202731;
+    opacity: 0.97;
 }
 
 .hobbies-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: black;
     padding: 20px;
     margin-top: 2%;
     margin-left: 8%;
@@ -137,52 +168,26 @@ h1, h2{
 
 }
 
+
 .hobbies{
     background-color: #202731;
+    padding: 20px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 20px;
+    border-color: #00D8FF;
+    border-style: solid;
+    background-color: #202731;
+    opacity: 0.97;
 }
 
 #me{
     width: 600px; 
     height: 400px; 
 }
-.top-wave {
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-}
 
-.top-wave {
-    display: block;
-    width: 100%;
-    height: 138px;
-}
 
-.top-wave .shape-fill {
-    fill: #000000;
-}
-
-.wave {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-}
-
-.wave svg{
-    display: block;
-    width: 100%;
-    height: 92px;
-    transform: rotateY(180deg);
-}
-
-.wave .shape-fill {
-    fill: #00D8FF;
-}
-.about-coloumn{
-    background-color: #202731;
-
-}
 
 .hobby-icon{
     padding-right: 10px;
@@ -193,27 +198,49 @@ h1, h2{
     display: flex;
     align-items: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.08);
-    transition: ease-in-out 0.3s;
+    background: #202731;
     height: 72px;
     width: 207px;
+    border-style: solid;
+    transition: 0.3s;
+    margin:2%
+}
+
+.hobbie-box:hover{
+    border-color: #00D8FF;
+    .hobby-text{
+        transition: 0.3s;
+        color: #00D8FF;
+    
+    }
+    
 }
 
 .hobby-text{
     font-weight: 700;
     font-family: 'Raleway',sans-serif;
-    font-size: 16px;
+    font-size: 25px;
+    color: aliceblue;
+
 }
+
 
 .hobby-title{
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     text-align: center;
+    font-size: 35px;
 
 }
 
+.shape-fill-hobby{
+    fill: #202731;
+}
+
+
 .menu{
     display: none;
+    background-color: black;
 }
 
 
@@ -227,8 +254,9 @@ h1, h2{
         width: 300px;
         height: 200px;
     }
-    ul{
-        display:none
+    .navbar{
+        display:none;
+
     }
     .toggle_btn{
         display: flex;
@@ -238,8 +266,32 @@ h1, h2{
     }
 
     .menu.open{
-        display: block;
+        display: flex;
+        margin:0%;
+        flex-direction: column;
+        animation: rotateX 300ms ease-in-out forwards;
+        transform-origin: top center;
+        .top-wave{
+            display: block;
+          }
     }
+
+    @keyframes rotateX {
+        0% {
+          opacity: 0;
+          transform: rotateX(-90deg);
+          .top-wave{
+            display: none;
+          }
+        }
+        50% {
+          transform: rotateX(-20deg);
+        }
+        100% {
+          opacity: 1;
+          transform: rotateX(0deg);
+        }
+      }
 
 }
 
