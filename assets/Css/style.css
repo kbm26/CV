@@ -104,22 +104,60 @@ p{
     background-color: rgb(192, 192, 192); 
     width: 80%; 
 } 
+ 
+.java{
+    width: 70%;
+}
 
-.skill { 
-    background-color: rgb(116, 194, 92); 
-    color: black; 
-    padding: 1%; 
-    text-align: right; 
-    font-size: 20px; 
-} 
+.js{
+    width:30%
+}
+
+.css{
+    width: 30%;
+}
 
 .html { 
-    width: 80%; 
+    width: 40%; 
 } 
 
-.php { 
+.python{
+    width: 60%;
+}
+
+.cs { 
     width: 60%; 
 }  
+
+.nosql{
+    width: 70%
+}
+
+.sql{
+    width:60%
+}
+
+.git{
+    width:60%
+}
+
+.docker{
+    width: 70%;
+}
+
+.springboot{
+    width: 30%;
+}
+
+.svelte{
+    width: 80%;
+}
+.teamwork{
+    width: 86%;
+}
+.leadership{
+    width: 69%;
+}
 
 h1, h2{
     color: #00D8FF;
@@ -252,30 +290,67 @@ h1, h2{
 }
 
 .resume-title{
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 30px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #f000ff;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
-.resume-box::before{
-    content: "";
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #f000ff;
-    border: 2px solid #f000ff;
-}
 
 .resume-box{
     border-left: 2px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
+    list-style: none;
+    padding: 0%;
+}
+
+.resume-text{
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+.resume-time{
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.skill{ 
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+
+.skills li{ 
+	margin: 20px 0;
+}
+
+.skills h2{
+    color: aliceblue;
+    font-weight: 100;
+}
+
+.bar{ 
+	background-color: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #21e787b3;
+}
+
+.bar span{ 
+	height: 2px;
+	float: left;
+	background-color: #21e74f;
 }
 
 .contact-container{
@@ -286,11 +361,13 @@ h1, h2{
     margin-top: 2%;
     margin-left: 8%;
     margin-right: 8%;
-    border-color: #00D8FF;
+    border-color: #2ea421;
     border-style: solid;
     background-color: #202731;
     opacity: 0.8;
 }
+
+
 
 @media screen and  (max-width: 768px){
     .about-container{
