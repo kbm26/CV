@@ -39,6 +39,7 @@ li{
     height:100px;
 }
 
+
 a{
     color: aliceblue;
     font-size: 18px;
@@ -171,7 +172,7 @@ h1, h2{
 #about-text{
     color:aliceblue;
     font-family: "Open Sans", sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .about-container{
@@ -213,10 +214,6 @@ h1, h2{
 
 }
 
-#me{
-    width: 600px; 
-    height: 400px; 
-}
 
 .hobby-icon{
     padding-right: 10px;
@@ -370,15 +367,6 @@ h1, h2{
 
 
 @media screen and  (max-width: 768px){
-    .about-container{
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-
-    #me{
-        width: 300px;
-        height: 200px;
-    }
     .navbar{
         display:none;
 
