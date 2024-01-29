@@ -175,7 +175,7 @@ h1, h2{
     font-size: 1.5rem;
 }
 
-.about-container{
+.about-container, .contact-container{
     display: flex;
     flex-direction: row;
     border-radius: 20px;
@@ -187,6 +187,11 @@ h1, h2{
     border-style: solid;
     background-color: #202731;
     opacity: 0.8;
+}
+
+.contact-container{
+    flex-direction: column;
+    align-items: center;
 }
 
 .hobbies-container{
@@ -341,7 +346,11 @@ h1, h2{
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 3px;
 	overflow: hidden;
-	box-shadow: 0 0 10px #21e787b3;
+}
+
+.bar:hover{
+    box-shadow: 0 0 10px #21e787b3;
+
 }
 
 .bar span{ 
@@ -350,21 +359,79 @@ h1, h2{
 	background-color: #21e74f;
 }
 
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
-    border-color: #2ea421;
-    border-style: solid;
-    background-color: #202731;
-    opacity: 0.8;
+form {
+    max-width:420px; margin:50px auto; 
 }
 
+.form-input {
+  color:white;
+  font-family: sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #00D8FF;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
 
+.form-input:focus {
+    border:2px solid #00D8FF;
+
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#00D8FF;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover {
+    background-color:#00D8FF; 
+    color: black;
+    
+}
+
+.button{
+    display: flex;
+    background-color: aliceblue;
+    margin: 1%;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    background:#00D8FF; 
+}
+
+.socialmedia-buttons{
+    display: flex;
+}
 
 @media screen and  (max-width: 768px){
     .navbar{
@@ -382,14 +449,14 @@ h1, h2{
         display: flex;
         margin:0%;
         flex-direction: column;
-        animation: rotateX 300ms ease-in-out forwards;
+        animation: menu-fall 300ms ease-in-out forwards;
         transform-origin: top center;
         .top-wave{
             display: block;
           }
     }
 
-    @keyframes rotateX {
+    @keyframes menu-fall {
         0% {
           opacity: 0;
           transform: rotateX(-90deg);
