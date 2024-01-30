@@ -1,6 +1,12 @@
 section{
     position: relative;
 }
+
+.admin{
+    
+}
+
+
 body {
     margin: 0%;
     background-image: url('../images/background.svg');
@@ -175,7 +181,7 @@ h1, h2{
     font-size: 1.5rem;
 }
 
-.about-container, .contact-container{
+.about-container, .contact-container, .admin-container{
     display: flex;
     flex-direction: row;
     border-radius: 20px;
@@ -391,7 +397,7 @@ textarea {
   resize:vertical;
 }
 
-[type="submit"] {
+[type="submit"], .display-database{
   font-family: sans-serif;
   width: 100%;
   background:black;
@@ -407,7 +413,11 @@ textarea {
   font-weight:700;
 }
 
-[type="submit"]:hover {
+.display-database{
+    margin-bottom: 10%;
+}
+
+[type="submit"]:hover, .display-database:hover {
     background-color:#00D8FF; 
     color: black;
     
@@ -432,6 +442,62 @@ textarea {
 .socialmedia-buttons{
     display: flex;
 }
+
+.admin-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.table{
+    display: none;
+}
+
+.table.open{
+display: block;
+}
+
+
+
+table {
+    color: aliceblue;
+    border: 1px solid #00D8FF;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    border: 1px solid #00D8FF;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+
+  td:hover{
+    color: #00D8FF;
+  }
+  
+  table th {
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+
 
 @media screen and  (max-width: 768px){
     .navbar{
@@ -472,6 +538,41 @@ textarea {
           transform: rotateX(0deg);
         }
       }
+
+      table {
+        border: 0;
+      }
+    
+      table caption {
+        font-size: 1.3em;
+      }
+      thead{
+        display: none;
+      }
+      
+      table thead {
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        width: 1px;
+      }
+      
+      table tr {
+        color: aliceblue;
+        display: block;
+        margin-bottom: .625em;
+      }
+      
+      table td {
+        border-bottom: 1px solid #000000;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+      }
+      
+      
+
+
 
 }
 
