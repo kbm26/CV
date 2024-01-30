@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         alert("Form successfully submitted")
 
+        name.value = ""
+        email.value = ""
+        message.value = ""
+
+
     })
 
 

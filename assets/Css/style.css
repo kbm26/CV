@@ -2,10 +2,12 @@ section{
     position: relative;
 }
 
-.admin{
-    
+p{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
 }
-
 
 body {
     margin: 0%;
@@ -40,11 +42,14 @@ li{
     margin: 20px;
 }
 
-#logo{
-    margin-left: 5%;
+.logo{
     height:100px;
+    cursor: pointer;
 }
 
+.logo-container{
+    margin-left: 5%;
+}
 
 a{
     color: aliceblue;
