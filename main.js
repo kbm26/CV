@@ -34,12 +34,6 @@ form.addEventListener("submit", (e)=>{
         message:message
     })
     alert("Form successfully submitted")
-
-    document.getElementById('fullName').value = ""
-    document.getElementById('email').value = ""
-    document.getElementById('message').value = ""
-
-
 })
 
 
