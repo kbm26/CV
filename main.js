@@ -13,36 +13,35 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database()
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const togglebtn = document.querySelector('.toggle_btn')
-    const menu = document.querySelector('.menu')
+const togglebtn = document.querySelector('.toggle_btn')
+const menu = document.querySelector('.menu')
 
 
-    togglebtn.addEventListener('click',function(){
-        menu.classList.toggle('open')
+togglebtn.addEventListener('click',function(){
+    menu.classList.toggle('open')
+})
+
+const form = document.querySelector('.form')
+form.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    const name = document.getElementById('fullName').value
+    const email = document.getElementById('email').value
+    const message = document.getElementById('message').value
+    
+    database.ref('messages/'+name).set({
+        name:name,
+        email:email,
+        message:message
     })
+    alert("Form successfully submitted")
 
-    const form = document.querySelector('.form')
-    form.addEventListener("submit", (e)=>{
-        e.preventDefault()
-        const name = document.getElementById('fullName').value
-        const email = document.getElementById('email').value
-        const message = document.getElementById('message').value
-        
-        database.ref('messages/'+name).set({
-            name:name,
-            email:email,
-            message:message
-        })
-        alert("Form successfully submitted")
-
-        name.value = ""
-        email.value = ""
-        message.value = ""
-
-
-    })
+    document.getElementById('fullName').value = ""
+    document.getElementById('email').value = ""
+    document.getElementById('message').value = ""
 
 
 })
+
+
+
 
